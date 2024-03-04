@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://pufanyi.github.io//lmms-eval-blog//sitemap.xml
+Sitemap: https://pufanyi.github.io//lmms-eval-blog/sitemap.xml
