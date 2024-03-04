@@ -44,8 +44,8 @@ jobs:
           DSLIM_TARGET_COMPOSE_SVC: jekyll
           DSLIM_CONTINUE_AFTER: signal
         with:
-          target: amirpourmand/al-folio
+          target: lmmseval/blogs
           tag: "slim"
 
       # Push to the registry
-      - run: docker image push amirpourmand/al-folio:slim
+      - run: docker image push lmmseval/blogs:slim
