@@ -2,7 +2,7 @@
 layout: default
 permalink: /
 title: blog
-nav: true
+# nav: true
 nav_order: 1
 pagination:
   enabled: true
@@ -18,58 +18,47 @@ pagination:
 
 <div class="post">
 
-  <header class="post-header">
-    <img src="{{ site.header_photo }}" alt="Header Photo" style="max-width: 100%; height: auto;">
-    <div style="height: 1.25rem;"></div>
-    <h1 class="post-title">
-      <strong>{{ site.full_title }}</strong>
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+<header class="post-header">
+  <img src="{{ site.header_photo }}" alt="Header Photo" style="max-width: 100%; height: auto;">
+  <div style="height: 1.25rem;"></div>
+  <h1 class="post-title">
+    <strong>{{ site.full_title }}</strong>
+  </h1>
+  <p class="desc">{{ page.subtitle }}</p>
+</header>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+<article>
+  {% if page.profile %}
+    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      {% if page.profile.image %}
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% if page.profile.image_circular %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+        {% else %}
+          {% assign profile_image_class = 'img-fluid z-depth-1
+    rounded' %}
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
+        {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+    30vw, 95vw"{% endcapture %}
+        {%
+          include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+          cache_bust=true
+        %}
+      {% endif %}
+      {% if page.profile.more_info %}
+        <div class="more-info">{{ page.profile.more_info }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+  <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-{% assign blog_name_size = site.blog_name | size %}
-{% assign blog_description_size = site.blog_description | size %}
-
-{% if blog_name_size > 0 or blog_description_size > 0 %}
-
-  <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
-  </div>
+  <!-- News -->
+  {% if page.news and site.announcements.enabled %}
+    <h2>
+      <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+    </h2>
+    {% include news.liquid limit=true %}
   {% endif %}
 
 {% if site.display_tags or site.display_categories %}
