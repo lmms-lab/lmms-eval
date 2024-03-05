@@ -40,14 +40,18 @@ abstract_markdown: We introduce **lmms-eval**, an evaluation framework meticulou
 
 {% if page.news and site.announcements.enabled %}
 
+<br>
 <hr>
+<br>
 
 <h2>
 <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
 </h2>
 {% include news.liquid limit=true %}
 
+<br>
 <hr>
+<br>
 
 {% endif %}
 
