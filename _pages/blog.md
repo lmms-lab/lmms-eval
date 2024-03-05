@@ -54,12 +54,13 @@ pagination:
   <div class="clearfix">{{ content }}</div>
 
   <!-- News -->
-  {% if page.news and site.announcements.enabled %}
-    <h2>
-      <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-    </h2>
-    {% include news.liquid limit=true %}
-  {% endif %}
+
+{% if page.news and site.announcements.enabled %}
+<h2>
+<a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+</h2>
+{% include news.liquid limit=true %}
+{% endif %}
 
 {% if site.display_tags or site.display_categories %}
 
