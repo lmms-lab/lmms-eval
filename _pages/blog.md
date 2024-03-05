@@ -29,9 +29,17 @@ news: true # includes a list of news items
 </header>
 
 <article>
+<div class="clearfix">
   We introduce **lmms-eval**, an evaluation framework meticulously crafted for consistent and efficient evaluation of Visual Language Models (VLMs). This framework simplifies the evaluation process across a diverse array of evaluation datasets, numbering over 50, while generating easily interpretable logs and samples using only one command. With its remarkable scalability, lmms-eval seamlessly integrates new evaluation datasets, requiring only a simple YAML file and a few helper functions to be effortlessly incorporated into the framework. By leveraging `accelerate` techniques for speed enhancement and supporting multi-GPU and tensor parallelism, it notably boosts evaluation throughput. Furthermore, by integrating with the HuggingFace dataset, researchers are relieved of the manual task of downloading and organizing datasets from various sources. Demonstrating robust stability, our experiments with [LLaVA](https://llava-vl.github.io/) using this framework consistently yielded identical results across all evaluations. The code is available at [GitHub](https://github.com/EvolvingLMMs-Lab/lmms-eval/).
+  </div>
   <!-- <div class="clearfix">{{ abstract }}</div> -->
 </article>
+
+---
+
+aaa
+
+<br>
 
   <!-- News -->
 
@@ -43,32 +51,6 @@ news: true # includes a list of news items
 {% include news.liquid limit=true %}
 {% endif %}
 
-{% if site.display_tags or site.display_categories %}
-
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      {% for tag in site.display_tags %}
-        <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
-      {% for category in site.display_categories %}
-        <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
