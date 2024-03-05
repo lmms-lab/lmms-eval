@@ -22,7 +22,7 @@ abstract_markdown: >
   With its remarkable scalability, **lmms-eval** seamlessly integrates new models and evaluation datasets, requiring only a simple modification on interfaces. We provide handy documentation and examples to help you get started to integrate `lmms-eval` into your project.
 
   To accelerate model development cycle, we leverage `accelerate` to wrap the model for distributed evaluation, supporting both multi-gpu and tensor parallelism. With **Task Grouping**, all instances from all tasks are grouped and evaluated in parallel, which significantly improves the throughput of the evaluation process.
-  
+
   The code is available at [GitHub](https://github.com/EvolvingLMMs-Lab/lmms-eval/).
 ---
 
