@@ -4,10 +4,10 @@
 
 title: LMMS-Eval # the website title (if blank, full name will be used instead)
 header_photo: assets/img/lmms-eval-header.png
-full_title: Large-scale Multi-modality Models Evaluation Suite
+full_title: Large-scale Multi-modality Models Evaluation Interface
 lab_name: LMMs-Lab
 lab_link: https://lmms-lab.github.io/
-email: drluodian@gmail.com
+email: lmms-eval@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
