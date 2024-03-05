@@ -36,6 +36,7 @@ news: true # includes a list of news items
   <!-- News -->
 
 {% if page.news and site.announcements.enabled %}
+
 <h2>
 <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
 </h2>
