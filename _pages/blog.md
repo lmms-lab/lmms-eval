@@ -29,7 +29,7 @@ news: true # includes a list of news items
 </header>
 
 <article>
-  {% include_relative abstract.md %}
+  {% include abstract.md %}
   <!-- <div class="clearfix">{{ abstract }}</div> -->
 </article>
 
