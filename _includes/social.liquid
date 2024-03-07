@@ -1,3 +1,10 @@
+{% if site.lab_name %}
+  {% if site.lab_link %}
+    <a href="{{ site.lab_link }}" title="{{ site.lab_name }}"><i class="fa-solid fa-flask"></i></a>
+  {% else %}
+    <i class="fa-solid fa-flask" title="{{ site.lab_name }}"></i>
+  {% endif %}
+{% endif %}
 {% if site.email %}
   <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fa-solid fa-envelope"></i></a>
 {% endif %}

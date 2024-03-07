@@ -88,6 +88,15 @@
                     {% endfor %}
                   </div>
                 </li>
+              {% elsif p.direct_link %}
+                <li class="nav-item {% if page.url == p.direct_link %}active{% endif %}">
+                  <a class="nav-link" href="{{ p.direct_link }}">
+                    {{- p.title }}
+                    {% if page.url == p.direct_link %}
+                      <span class="sr-only">(current)</span>
+                    {% endif %}
+                  </a>
+                </li>
               {% else %}
                 <li class="nav-item {% if page.url contains p.permalink %}active{% endif %}">
                   {% if p.permalink contains '/blog/' %}{% assign url = '/blog/' %} {% else %}{% assign url = p.url %}{% endif %}
