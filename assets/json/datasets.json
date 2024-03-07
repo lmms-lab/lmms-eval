@@ -1,74 +1,74 @@
 [
-    {
-        "Name": "AI2D",
-        "ID": "ai2d"
-    },
-    {
-        "Name": "ChartQA",
-        "ID": "chartqa"
-    },
-    {
-        "Name": "CMMMU",
-        "ID": "cmmmu"
-    },
-    {
-        "Name": "COCO Caption",
-        "ID": "coco_cap"
-    },
-    {
-        "Name": "DOCVQA",
-        "ID": "docvqa"
-    },
-    {
-        "Name": "Ferret",
-        "ID": "ferret"
-    },
-    {
-        "Name": "Flickr30K",
-        "ID": "flickr30k"
-    },
-    {
-        "Name": "GQA",
-        "ID": "gqa"
-    },
-    {
-        "Name": "HallusionBenchmark",
-        "ID": "hallusion_bench_image"
-    },
-    {
-        "Name": "Infographic VQA",
-        "ID": "info_vqa"
-    },
-    {
-        "Name": "LLaVA-Bench",
-        "ID": "llava_bench_wild"
-    },
-    {
-        "Name": "LLaVA-Bench-COCO",
-        "ID": "llava_bench_coco"
-    },
-    {
-        "Name": "MathVista",
-        "ID": "mathvista"
-    },
-    {
-        "Name": "MMBench",
-        "ID": "mmbench"
-    },
-    {
-        "Name": "MME",
-        "ID": "mme"
-    },
-    {
-        "Name": "MMMU",
-        "ID": "mmmu"
-    },
-    {
-        "Name": "MMVet",
-        "ID": "mmvet"
-    },
-    {
-        "Name": "Multi-DocVQA",
-        "ID": "multidocvqa"
-    }
+  {
+    "Name": "AI2D",
+    "ID": "ai2d"
+  },
+  {
+    "Name": "ChartQA",
+    "ID": "chartqa"
+  },
+  {
+    "Name": "CMMMU",
+    "ID": "cmmmu"
+  },
+  {
+    "Name": "COCO Caption",
+    "ID": "coco_cap"
+  },
+  {
+    "Name": "DOCVQA",
+    "ID": "docvqa"
+  },
+  {
+    "Name": "Ferret",
+    "ID": "ferret"
+  },
+  {
+    "Name": "Flickr30K",
+    "ID": "flickr30k"
+  },
+  {
+    "Name": "GQA",
+    "ID": "gqa"
+  },
+  {
+    "Name": "HallusionBenchmark",
+    "ID": "hallusion_bench_image"
+  },
+  {
+    "Name": "Infographic VQA",
+    "ID": "info_vqa"
+  },
+  {
+    "Name": "LLaVA-Bench",
+    "ID": "llava_bench_wild"
+  },
+  {
+    "Name": "LLaVA-Bench-COCO",
+    "ID": "llava_bench_coco"
+  },
+  {
+    "Name": "MathVista",
+    "ID": "mathvista"
+  },
+  {
+    "Name": "MMBench",
+    "ID": "mmbench"
+  },
+  {
+    "Name": "MME",
+    "ID": "mme"
+  },
+  {
+    "Name": "MMMU",
+    "ID": "mmmu"
+  },
+  {
+    "Name": "MMVet",
+    "ID": "mmvet"
+  },
+  {
+    "Name": "Multi-DocVQA",
+    "ID": "multidocvqa"
+  }
 ]
