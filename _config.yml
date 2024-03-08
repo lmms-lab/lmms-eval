@@ -4,7 +4,7 @@
 
 title: LMMS-Eval # the website title (if blank, full name will be used instead)
 header_photo: assets/img/lmms-eval-header.png
-full_title: Large-scale Multi-modality Models Evaluation Interface
+full_title: Large Multimoal Models Evaluation Interface
 lab_name: LMMs-Lab
 lab_link: https://lmms-lab.github.io/
 email: lmms-eval@outlook.com

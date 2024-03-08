@@ -8,7 +8,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-We introduce **lmms-eval**, an evaluation framework meticulously crafted for consistent and efficient evaluation of Large-scale Multi-modality Models (LMMs).
+We introduce **lmms-eval**, an evaluation framework meticulously crafted for consistent and efficient evaluation of Large Multimoal Models (LMMs).
 
 ---
 
